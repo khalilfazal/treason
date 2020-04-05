@@ -1,5 +1,5 @@
 /*
- * Copyright 2015-2016 Christopher Brown and Jackie Niebling.
+ * Copyright Christopher Brown, Jackie Niebling, and Khalil Fazal.
  *
  * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
  *
@@ -43,6 +43,8 @@ app.use(express.static(__dirname + '/web'));
 
 var version = require('./version');
 app.get('/version.js', version);
+
+require('./helpers');
 
 app.get('/', function (req, res) {
     res.render('pages/index.ejs');

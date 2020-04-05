@@ -1,0 +1,10 @@
+<div>
+    <!-- ko foreach: state.roles -->
+        <% include role_description.ejs %>
+    <!-- /ko -->
+    <!-- ko if: state.roles().length === 0 -->
+        <!-- ko foreach: ['duke', 'captain', 'assassin', 'contessa', 'ambassador'] -->
+            <% include role_description.ejs %>
+        <!-- /ko -->
+    <!-- /ko -->
+</div>
