@@ -1,6 +1,15 @@
+# npm
 node_modules
 npm-debug.log
 treason*.log*
-
-# npm
 package-lock.json
+config.json
+log.txt
+
+# pouchdb
+treason_db
+treason*.log*
+treason_db-*
+pouch__all_dbs__
+_replicator
+_users
